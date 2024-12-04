@@ -1,0 +1,221 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    padding-top: 56px;
+    background-image: linear-gradient(to bottom, #2f3c7e, #8b5085, #c37285, #e4a28d, #f5d6ab);
+    background-size: cover;
+    background-attachment: fixed;
+    border: none !important;
+}
+
+.parallax {
+    height: auto;
+    padding: 2rem 1rem;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 2rem;
+}
+
+.parallax p {
+    font-family: 'Coustard', serif;
+    font-weight: 530;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 3rem;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #121212;
+    text-shadow: 0px 2px 1px #d63384;
+}
+
+.parallax:first-of-type {
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+.navbar {
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
+}
+
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header-expanded {
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.nav-link {
+    font-family: 'Jomhuria', sans-serif;
+    font-size: 2rem;
+    color: #ffffff;
+    transition: color 0.3s ease; 
+}
+
+.nav-link:hover {
+    color: #d63384; 
+}
+
+.spinning-icon {
+    background-color: #f1ebeb;
+    padding: 3px;
+    border-radius: 50%;
+    margin-right: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+    outline: none;
+}
+
+.spinning-icon i {
+    font-size: 2.2em;
+    color: #121212;
+    animation: spin 2s linear infinite;
+}
+
+.spinning-icon:hover {
+    background-color: #f1ebeb;
+
+    transform: scale(1.05);
+
+}
+
+.spinning-icon:hover i {
+    color: #d63384;
+
+}
+
+.title-container {
+    background-color: #f1ebeb;
+    padding: 6px 12px;
+    border-radius: 50px;
+    color: #121212;
+    display: inline-flex;
+    align-items: center;
+    opacity: 0;
+    animation: slideInFromLeft 1s ease-out forwards;
+
+}
+
+.title-text {
+    font-family: 'Cherry Bomb One', cursive;
+    font-size: 1.2em;
+}
+
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-4%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.section {
+    text-align: center;
+    background-color: #f1ebeb;
+    padding: 1.2rem;
+    border-radius: 5rem;
+    margin-bottom: 1.5rem;  
+    opacity: .9;
+}
+
+.section p {
+    font-family: 'Coustard', serif;
+    font-weight: 501;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: left;
+}
+
+
+.title {
+    font-weight: bold;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #121212;
+    text-shadow: 0px 2px 1px #d63384;
+}
+
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.project-card {
+    background-color: #2a2a2a;
+    border: 1px solid #dcdcdc;
+    border-radius: 1em;
+}
+
+.project-card-title,
+.project-card-text {
+    color: #e0e0e0;
+}
+
+.btn-view {
+    background-color: #e8e8e8;
+    color: #121212;
+    border: none;
+}
+
+.btn-view:hover {
+    background-color: #d0d0d0;
+}
+
+
+footer {
+    background: none;
+}
+
+footer a:hover {
+    color: #dcdcdc;
+}
+
+@media (max-width: 768px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
