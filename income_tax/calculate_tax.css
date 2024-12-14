@@ -1,21 +1,26 @@
 label {
     display: inline-block;
-    width: 11em;
-    text-align: right;
+    text-align: left;
     font-family: 'Coustard', serif;
     font-weight: 600;
+    margin-right: 10px;
+}
+
+#income {
+    width: 150px;
+    margin-right: 5px;
 }
 
 input[type="text"],
 input[type="button"] {
-    margin-left: 1em;
+    margin-left: 0;
 }
 
 div {
     margin-bottom: 1.5em;
 }
 
-input#calculate[type="button"] {
+button#calculate {
     font-family: 'Cherry Bomb One', cursive;
     font-size: 1.2rem;
     color: #ffffff;
@@ -28,7 +33,7 @@ input#calculate[type="button"] {
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-input#calculate[type="button"]:hover {
+button#calculate:hover {
     background-color: #121212;
     color: #d63384;
     transform: scale(1.1);
@@ -54,4 +59,41 @@ input#calculate[type="button"]:hover {
 .title-text {
     line-height: 1;
     margin: 0;
+}
+
+label.error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    text-shadow: 
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.anti-error {
+    color: rgb(255, 153, 0);
+    font-weight: bold;
+    font-size: 0.9em;
+    text-align: center;
+    display: block;
+    text-shadow: 
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+#tax {
+    color: rgb(55, 219, 9);
+    font-weight: bold;
+    text-shadow: 
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
 }

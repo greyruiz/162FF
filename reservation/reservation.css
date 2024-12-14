@@ -1,0 +1,77 @@
+
+
+div {
+    margin-bottom: 0.5em;
+}
+
+fieldset {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: .5em;
+}
+
+legend {
+    color: rgb(38, 4, 41);
+    font-family: 'Jomhuria', cursive;
+    font-size: 200%;
+    margin-bottom: .5em;
+}
+
+label {
+    display: inline-block;
+    width: 6em;
+    font-family: 'Coustard', serif;
+    font-size: 1rem;
+}
+
+input, select {
+    font-family: 'Coustard', serif;
+    font-size: 1rem;
+    margin-left: 1em;
+    margin-right: 0.5em;
+    padding: 8px;
+    width: 14em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input.left {
+    width: 1em;
+    padding-left: 0;
+}
+
+#adults, #children {
+    width: 60px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#smoking {
+    width: 1em;
+    margin-left: 0;
+}
+
+#submit {
+    margin-left: 0;
+    width: 10em;
+    font-family: 'Coustard', serif;
+    font-size: 1rem;
+    background-color: #d63384;
+    color: white;
+    border: none;
+    padding: 5px 1px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #000000;
+    color:#d63384;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    transform: scale(1.1);
+}
+
+span {
+    color: red;
+}

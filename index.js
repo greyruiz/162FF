@@ -1,4 +1,4 @@
-//s.l
+
 window.addEventListener('scroll', function () {
     const navbar = document.querySelector('.navbar');
     console.log('Scroll event triggered');
